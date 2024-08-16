@@ -4,13 +4,13 @@ import "./Styles/index.css";
 import "./Styles/Animations.css";
 import App from "./Vajra";
 import { AuthProvider } from "./AuthContext";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AuthProvider>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </AuthProvider>
 );
